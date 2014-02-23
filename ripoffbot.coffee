@@ -21,7 +21,7 @@
 # ░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▀▀░░░░░░░░
 #
 # Dependencies:
-#   You or someone you know needs to setup and run https://github.com/ninetwentyfour/tipbot
+#   You or someone you know needs to setup and run https://github.com/Goldman/ripoffbot
 #   You also need these ENV Vars:
 #     HIPCHAT_TOKEN=
 #     TIPBOT_AUTH_TOKEN=
@@ -35,7 +35,7 @@
 #   - tipbot address (show the address you can send coins to for tipping)
 #   - tipbot balance (show your current balance)
 #   - tipbot history (show transaction history)
-#   - tipbot tip @mentionName # (tip someone coins e.g. tipbot tip @TravisBerry 10)
+#   - tipbot tip @mentionName # (tip someone coins e.g. tipbot tip @GoldmanZachs 10000)
 #   - tipbot withdraw personalAddress (withdraw your tips into your personal wallet)
 # 
 # Author:
@@ -43,6 +43,7 @@
 # 
 # WARNING:
 #   This is a pretty basic start to this script. Don't keep large amounts of dogecoins in this app!
+
 HipchatClient = require('hipchat-client')
 crypto = require('crypto')
 HipChat = new HipchatClient(process.env.HIPCHAT_TOKEN)
