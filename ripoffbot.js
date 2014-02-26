@@ -17,5 +17,9 @@ app.get('/tweets/:username', function(req, res) {
   
   request(url, function(err, res, body) {
     var tweets = JSON.parse(body);
+    var tip_pattern = /tip @(\w+) (\d+)/;
+    tweets.forEach(function(tweet) {
+      tip_pattern.exec(tweet.text);
+    });
   });
 });
