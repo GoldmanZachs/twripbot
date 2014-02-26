@@ -15,6 +15,7 @@ app.get('/tweets/:username', function(req, res) {
     query: { screen_name: username, count: 50 }
   }  
   
-  var twitterUrl = url.format(options);
-  request(twitterUrl).pipe(res);
+  request(url, function(err, res, body) {
+    var tweets = JSON.parse(body);
+  });
 });
