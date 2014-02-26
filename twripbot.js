@@ -1,7 +1,7 @@
 var express = require('express');
 var request = require('request');
 var request = require('url');
-var settings = require('./DogeAPI.js');
+var doge_api = require('./DogeAPI.js');
 
 var app = express();
 
@@ -20,7 +20,7 @@ app.get('/tweets/:username', function(req, res) {
     var tip_pattern = /tip @(\w+) (\d+)/;
     tweets.forEach(function(tweet) {
       tip_pattern.exec(tweet.text);
-      withdraw($1, $2, function(err, res) {
+      doge_api.withdraw($1, $2, function(err, res) {
         // ....
         // ....
       });
