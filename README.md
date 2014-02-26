@@ -1,4 +1,8 @@
 ripoffbot
 =========
 
-HipChat tipbot Dogecoin. Such Theft
+in a terminal type 
+`node ripoffbot.js`
+
+in a terminal type 
+`curl -s hhtp://localhost:8080/tweets/Goldmanzachs`
