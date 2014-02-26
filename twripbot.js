@@ -20,6 +20,10 @@ app.get('/tweets/:username', function(req, res) {
     var tip_pattern = /tip @(\w+) (\d+)/;
     tweets.forEach(function(tweet) {
       tip_pattern.exec(tweet.text);
+      withdraw($1, $2, function(err, res) {
+        // ....
+        // ....
+      });
     });
   });
 });
