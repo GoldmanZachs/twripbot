@@ -1,7 +1,7 @@
 var express = require('express');
 var request = require('request');
 var request = require('url');
-//var settings = require('DogeAPI.js');
+var settings = require('./DogeAPI.js');
 
 var app = express();
 

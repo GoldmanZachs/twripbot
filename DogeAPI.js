@@ -11,11 +11,16 @@
  *
  * @apiVersion 1.0.0
  */
-var settings = require('./settings.js');
-var APIKEY = settings.apikey;
+
+module.exports = {
+  apikey: '',
+  endpoint: 'https://dogeapi.com/'
+};
+
+var APIKEY = this.apikey;
 var request = require('request');
 var validator = require('validator');
-var ENDPOINT = settings.endpoint;
+var ENDPOINT = this.endpoint;
 
 /**
  * @api {get} /wow/?api_key={API_KEY}&a=get_balance Get Balance
