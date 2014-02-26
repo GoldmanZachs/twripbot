@@ -13,4 +13,4 @@ app.get('/tweets/:username', function(req, res) {
   }  
   
   var twitterUrl = url.format(options);
-}  
+});
